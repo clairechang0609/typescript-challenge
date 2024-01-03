@@ -6,4 +6,6 @@
  */
 
 // 請在下方寫下你的程式碼
-
+export const fetchData = async (url: string) => {
+    return await fetch(url).then(response => response.json());
+}
